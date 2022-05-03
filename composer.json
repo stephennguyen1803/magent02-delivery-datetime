@@ -1,0 +1,30 @@
+{
+    "name": "dungna/delivery-datetime",
+    "description": "a module add a custom field to magento2 checkout (add delivery date, delivery time from, to)",
+    "type": "magento2-module",
+    "minimum-stability": "stable",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "dungna",
+            "email": "anhdung.phc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~7.4.0||~8.1.0",
+        "magento/module-checkout": "100.4.*",
+        "magento/module-quote": "101.2.*",
+        "magento/module-sales": "103.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Dungna\\DeliveryDateTime\\": ""
+        }
+    }
+}
